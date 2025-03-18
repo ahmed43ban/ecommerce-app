@@ -10,8 +10,8 @@ class FavouriteScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: EdgeInsets.symmetric(
-            horizontal: AppSize.s14.w, vertical: AppSize.s10.h),
+        padding: REdgeInsets.symmetric(
+            horizontal: AppSize.s14, vertical: AppSize.s10),
         child: ListView.builder(
           itemCount: AppConstants.favoriteProducts.length,
           itemBuilder: (context, index) {

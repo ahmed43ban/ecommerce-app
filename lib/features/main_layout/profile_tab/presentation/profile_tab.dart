@@ -27,7 +27,7 @@ class ProfileTabState extends State<ProfileTab> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(AppPadding.p20),
+      padding:  REdgeInsets.all(AppPadding.p20),
       child: SafeArea(
         child: SingleChildScrollView(
           child: Column(
@@ -35,7 +35,7 @@ class ProfileTabState extends State<ProfileTab> {
             children: [
               SvgPicture.asset(
                 SvgAssets.routeLogo,
-                height: AppSize.s40,
+                height: AppSize.s40.h,
                 colorFilter: ColorFilter.mode(
                   ColorManager.primary,
                   BlendMode.srcIn,
@@ -45,15 +45,15 @@ class ProfileTabState extends State<ProfileTab> {
               Text(
                 'Welcome, Mohamed',
                 style: getSemiBoldStyle(
-                    color: ColorManager.primary, fontSize: FontSize.s18),
+                    color: ColorManager.primary, fontSize: FontSize.s18.sp),
               ),
               Text(
                 'mohamed.N@gmail.com',
                 style: getRegularStyle(
                     color: ColorManager.primary.withOpacity(.5),
-                    fontSize: FontSize.s14),
+                    fontSize: FontSize.s14.sp),
               ),
-              SizedBox(height: AppSize.s18.h),
+              SizedBox(height: AppSize.s18.h.h),
               BuildTextField(
                 borderBackgroundColor: ColorManager.primary.withOpacity(.5),
                 readOnly: isFullNameReadOnly,

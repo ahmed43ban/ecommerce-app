@@ -13,7 +13,7 @@ class ProductItem extends StatelessWidget {
       imageUrl: imageUrl,
       imageBuilder: (context, image) => Container(
         width: double.infinity,
-        padding: const EdgeInsets.all(16),
+        padding:  REdgeInsets.all(16),
         height: 300.h,
         decoration: BoxDecoration(
           image: DecorationImage(image: image, fit: BoxFit.cover),

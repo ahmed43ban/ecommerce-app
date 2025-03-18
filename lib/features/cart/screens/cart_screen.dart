@@ -16,7 +16,7 @@ class CartScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           'Cart',
-          style: getMediumStyle(fontSize: 20, color: ColorManager.textColor),
+          style: getMediumStyle(fontSize: 20.sp, color: ColorManager.textColor),
         ),
         centerTitle: true,
         actions: [
@@ -39,7 +39,7 @@ class CartScreen extends StatelessWidget {
         ],
       ),
       body: Padding(
-        padding: const EdgeInsets.all(AppPadding.p14),
+        padding: REdgeInsets.all(AppPadding.p14),
         child: Column(
           children: [
             Expanded(

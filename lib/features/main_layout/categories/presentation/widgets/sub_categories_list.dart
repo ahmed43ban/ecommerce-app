@@ -5,6 +5,7 @@ import 'package:ecommerce_app/core/resources/styles_manager.dart';
 import 'package:ecommerce_app/core/resources/values_manager.dart';
 import 'package:ecommerce_app/features/main_layout/categories/presentation/widgets/category_card_item.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'sub_category_item.dart';
 
@@ -22,7 +23,7 @@ class SubCategoriesList extends StatelessWidget {
             child: Text(
               'Laptops & Electronics',
               style: getBoldStyle(
-                  color: ColorManager.primary, fontSize: FontSize.s14),
+                  color: ColorManager.primary, fontSize: FontSize.s14.sp),
             ),
           ),
           // the category card

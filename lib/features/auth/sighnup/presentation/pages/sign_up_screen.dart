@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../../../core/resources/assets_manager.dart';
-import '../../../../core/resources/color_manager.dart';
-import '../../../../core/resources/styles_manager.dart';
-import '../../../../core/resources/values_manager.dart';
-import '../../../../core/widget/main_text_field.dart';
-import '../../../../core/widget/validators.dart';
+import '../../../../../core/resources/assets_manager.dart';
+import '../../../../../core/resources/color_manager.dart';
+import '../../../../../core/resources/styles_manager.dart';
+import '../../../../../core/resources/values_manager.dart';
+import '../../../../../core/widget/main_text_field.dart';
+import '../../../../../core/widget/validators.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -19,7 +19,7 @@ class SignUpScreen extends StatelessWidget {
       backgroundColor: ColorManager.primary,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(AppPadding.p20),
+          padding: REdgeInsets.all(AppPadding.p20),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -81,7 +81,7 @@ class SignUpScreen extends StatelessWidget {
                       label: 'Sign Up',
                       backgroundColor: ColorManager.white,
                       textStyle: getBoldStyle(
-                          color: ColorManager.primary, fontSize: AppSize.s20),
+                          color: ColorManager.primary, fontSize: AppSize.s20.sp),
                       onTap: () {},
                     ),
                   ),

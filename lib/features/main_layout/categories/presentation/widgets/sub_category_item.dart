@@ -3,6 +3,7 @@ import 'package:ecommerce_app/core/resources/styles_manager.dart';
 import 'package:ecommerce_app/core/resources/values_manager.dart';
 import 'package:ecommerce_app/core/routes_manager/routes.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SubCategoryItem extends StatelessWidget {
   final String title;
@@ -22,10 +23,10 @@ class SubCategoryItem extends StatelessWidget {
             aspectRatio: 1,
             child: Container(
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(AppSize.s12),
-                  border: Border.all(color: ColorManager.primary, width: 2)),
+                  borderRadius: BorderRadius.circular(AppSize.s12.r),
+                  border: Border.all(color: ColorManager.primary, width: 2.w)),
               child: ClipRRect(
-                borderRadius: BorderRadius.circular(AppSize.s10),
+                borderRadius: BorderRadius.circular(AppSize.s10.r),
                 child: Image.asset(
                   image,
                   fit: BoxFit.cover,

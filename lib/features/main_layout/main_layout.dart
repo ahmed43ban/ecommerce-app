@@ -5,6 +5,7 @@ import 'package:ecommerce_app/features/main_layout/categories/presentation/categ
 import 'package:ecommerce_app/features/main_layout/favourite/presentation/favourite_screen.dart';
 import 'package:ecommerce_app/features/main_layout/profile_tab/presentation/profile_tab.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'home/presentation/home_tab.dart';
 
@@ -30,8 +31,8 @@ class _MainLayoutState extends State<MainLayout> {
       extendBody: false,
       body: tabs[currentIndex],
       bottomNavigationBar: ClipRRect(
-        borderRadius: const BorderRadius.only(
-            topLeft: Radius.circular(15), topRight: Radius.circular(15)),
+        borderRadius:  BorderRadius.only(
+            topLeft: Radius.circular(15.r), topRight: Radius.circular(15.r)),
         child: SizedBox(
           height: MediaQuery.of(context).size.height * 0.1,
           child: BottomNavigationBar(

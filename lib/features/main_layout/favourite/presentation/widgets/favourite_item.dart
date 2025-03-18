@@ -20,7 +20,7 @@ class FavoriteItem extends StatelessWidget {
       },
       child: Container(
         height: AppSize.s135.h,
-        padding: EdgeInsets.only(right: AppSize.s8.w),
+        padding: REdgeInsets.only(right: AppSize.s8),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(AppSize.s16.r),
             border: Border.all(color: ColorManager.primary.withOpacity(.3))),
@@ -53,7 +53,7 @@ class FavoriteItem extends StatelessWidget {
             ),
             Expanded(
                 child: Padding(
-                    padding: EdgeInsets.only(left: AppSize.s8.w),
+                    padding: REdgeInsets.only(left: AppSize.s8),
                     child: FavouriteItemDetails(
                       product: product,
                     ))),

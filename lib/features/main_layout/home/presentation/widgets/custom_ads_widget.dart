@@ -20,7 +20,7 @@ class CustomAdsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: AppPadding.p16),
+      padding:  REdgeInsets.symmetric(horizontal: AppPadding.p16),
       child: Stack(
         children: [
           AnimatedSwitcher(

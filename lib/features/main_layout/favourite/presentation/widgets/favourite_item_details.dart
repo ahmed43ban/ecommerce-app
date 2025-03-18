@@ -27,7 +27,7 @@ class FavouriteItemDetails extends StatelessWidget {
         Row(
           children: [
             Container(
-              margin: EdgeInsets.only(right: AppSize.s10.w),
+              margin: REdgeInsets.only(right: AppSize.s10),
               width: AppSize.s14.w,
               height: AppSize.s14.h,
               decoration: BoxDecoration(

@@ -16,11 +16,11 @@ class CategoryCardItem extends StatelessWidget {
   Widget build(BuildContext context) {
     // Create a container for the category card
     return Container(
-      margin: const EdgeInsets.symmetric(vertical: AppSize.s16),
+      margin:  REdgeInsets.symmetric(vertical: AppSize.s16),
       // Height of the card set with fixed size to make all image same size but it can be deleted without affecting the code
-      height: AppSize.s100,
+      height: AppSize.s100.h,
       child: ClipRRect(
-        borderRadius: BorderRadius.circular(AppSize.s12),
+        borderRadius: BorderRadius.circular(AppSize.s12.r),
         child: Stack(
           children: [
             // Background image for the category
@@ -32,7 +32,7 @@ class CategoryCardItem extends StatelessWidget {
             // Overlay with category title and button
             Positioned.fill(
                 child: Padding(
-              padding: const EdgeInsets.symmetric(
+              padding:  REdgeInsets.symmetric(
                   horizontal: AppPadding.p18, vertical: AppMargin.m8),
               child: Row(
                 children: [

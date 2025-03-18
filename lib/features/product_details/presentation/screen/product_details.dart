@@ -42,7 +42,7 @@ class ProductDetails extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.only(left: 16.w, right: 16.w, bottom: 50.h),
+          padding: REdgeInsets.only(left: 16, right: 16, bottom: 50),
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             const ProductSlider(items: [

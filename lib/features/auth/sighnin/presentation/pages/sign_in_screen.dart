@@ -9,8 +9,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../../core/resources/font_manager.dart';
-import '../../../../core/resources/styles_manager.dart';
+import '../../../../../core/resources/font_manager.dart';
+import '../../../../../core/resources/styles_manager.dart';
 
 class SignInScreen extends StatelessWidget {
   const SignInScreen({super.key});
@@ -21,7 +21,7 @@ class SignInScreen extends StatelessWidget {
       backgroundColor: ColorManager.primary,
       body: SafeArea(
         child: Padding(
-          padding: const EdgeInsets.all(AppPadding.p20),
+          padding: REdgeInsets.all(AppPadding.p20),
           child: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
